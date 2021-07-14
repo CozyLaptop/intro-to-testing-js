@@ -34,3 +34,14 @@ describe('sayHello', function() {
     });
 
 });
+describe('isFive', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true when 5 is passed in', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when "5" is passed in', function() {
+        expect(isFive("5")).toBe(false);
+    });
+});
